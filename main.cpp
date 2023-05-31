@@ -14,8 +14,7 @@
 #define IDM_SIZE_MEDIUM 1012
 #define IDM_SIZE_LARGE 1013
 
-//using namespace std;
-
+// Структура точки
 struct Point
 {
     int x;
@@ -198,7 +197,7 @@ void CreateMenu(HWND hWnd)
 
     SetMenu(hWnd, hMenu);
 }
-
+// Рисование точки
 void DrawPoint(HWND hWnd, int x, int y)
 {
     // Создание новой точки
