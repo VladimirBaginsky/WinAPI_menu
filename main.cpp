@@ -139,10 +139,10 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         Rectangle(hdc, rect.left, rect.top, rect.right, rect.bottom);
 
         InvalidateRect(hWnd, NULL, TRUE);
-        //int x = LOWORD(lParam);
-        //int y = HIWORD(lParam);
+        int x = LOWORD(lParam);
+        int y = HIWORD(lParam);
 
-        //DrawPoint(hWnd, x, y);
+        DrawPoint(hWnd, x, y);
     }
     break;
 
